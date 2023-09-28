@@ -1,1 +1,23 @@
-div
+.logo-container{
+    padding: 10px;
+    text-align:center;
+}
+.logo-container img{
+    width: 200px;
+}
+
+.testo-con-barra{
+    border-top: 1px solid yellow;
+    background-color: #FDFCF2;
+    padding: 20px;
+    text-align: center;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.foto{
+    width: 100%;
+}
