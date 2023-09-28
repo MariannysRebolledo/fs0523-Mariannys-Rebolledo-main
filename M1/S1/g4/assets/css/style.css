@@ -1,44 +1,114 @@
-/* IMPOSTAZIONI GENERALI */
-body {
-    padding: 100px;
-    margin: 0 auto;
+:root{
+    --azzurro-chiaro: rgb(0, 160, 198);
+    --azzurro-scuro: rgba(3, 109, 134, 1);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 20px;
     background-image: url(../img/sfondo.png);
 }
-/* HEADER */
 
-
-.header {
-    padding: 10px;
-    text-align:center;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-    background: linear-gradient(90deg, rgba(0,164,172,1) 0%, rgba(0,128,166,1) 100%);
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
-.container-testo {
-    padding: 25px 28px;
+h1{
+    font-size:2rem;
+    line-height: 3rem;
     margin-bottom: 20px;
+}
+h2{
+    font-size:1.4rem;
+}
+h3{
+    font-size:1.3rem;
+}
+h4{
+    font-size:1.2rem;
+}
+
+ul:not(#menu){
+    list-style-type: disc;
+}
+ol{
+    list-style-type: decimal;
+}
+
+ol, ul:not(#menu){
+    padding-left: 20px;
+    list-style-position: inside;
+}
+/*header*/
+
+#header{
+    background-image: linear-gradient(180deg, var(--azzurro-chiaro), var(--azzurro-scuro));
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+#header, #footer{
+    text-align: center;
+    color: #fff;
+}
+
+#menu li:before{
+    content: "⇒";
+}
+#menu li:after{
+    content: "⇐";
+}
+
+#menu a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*corpo*/
+.container{
     background-color: white;
-    height:100vh;
-    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 40px 18px;
+    box-sizing: border-box;
+}
+.container code{
+    background-color:rgb(192, 192, 192);
+    border: 1px solid #808080;
+    border-radius: 5px;
+    padding: 2px;
 }
 
-.titolo-menu {
-    margin-top: 30px;
+.post-meta{
+    color: #808080;
+    margin-bottom: 30px;
 }
 
-.menu {
-    margin-top: 20px;
+.table{
+    width: 100%;
+    text-align: center;
 }
 
-/* MAIN */
+.table thead tr{
+    background-color: var(--azzurro-scuro);
+}
+.table thead th{
+    padding: 30px;
+    color: white;
+    border-left: 1px solid var(--azzurro-chiaro);
+}
+.table tbody td{
+    padding: 20px 30px;
+}
+.table tbody tr:nth-last-of-type(even){
+    background-color: #ccc;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+}
+/*footer*/
 
-/* ELEMENTI NEL MAIN - ARTICLE */
-
-/* TABELLE */
-
-/* FORM */
-
-/* ELEMENTI NELL' ASIDE */
-
-/* FOOTER */
+#footer{
+    background-image: linear-gradient(180deg, var(--azzurro-chiaro), var(--azzurro-scuro));
+    padding: 15px;
+}
