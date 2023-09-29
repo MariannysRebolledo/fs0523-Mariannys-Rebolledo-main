@@ -1,0 +1,129 @@
+/*HEADER*/
+header{
+    background-color: black;
+    padding: 40px 0;
+    margin: ; /*da definire - ????????????????????*/
+    display: block;
+}
+
+.header-logo{
+    text-align: center;
+} 
+
+
+/*BODY*/
+body{
+    font-family: 'Montserrat', sans-serif 'Open Sans' sans-serif;
+    font-weight: 600,300;300;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+
+/*FONT*/
+h1, h2, h3, h4, h5, h6{
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #25a2c3;
+    text-align: center; 
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 4rem;
+    line-height: 4rem;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+h3 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+h4{
+
+}
+h5{
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 1,6rem;
+    line-height: 3rem;
+    color: white;
+    text-align: center;   
+}
+p{
+    font-family: Open Sans; 
+    font-weight: 300;
+    font-size: 1,2rem;
+    line-height: 2rem;
+    color: #393d41;
+    text-align: center;
+}
+
+
+
+
+/*BANNER*/
+.contenitore{
+    background-image: url(../images/banner.jpg);
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.contenitore code{
+    background-color:#e22d0e;
+    border: 1px solid #e22d0e;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+/*CONTENITORE TEXT*/
+.foto-dentro-il-testo{ 
+    border-radius: 40px;
+    text-align: center;
+    margin-bottom: 40px; 
+    margin-top: 40px;
+}
+
+
+/*CONTENITORE 2*/
+.banner-colorato{
+    background-color:#e22d0e;
+    padding: 130px 0;
+    margin: ; /*da definire - ????????????????????*/
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+figcaption {
+    font-family: Open Sans;
+    font-weight: 300;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+/*CONTENITORI 3*/
+
+
+
+/*FOOTER*/
+footer{
+    background-color: #2cbedf; 
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+text-footer{
+    color: white;
+}
+

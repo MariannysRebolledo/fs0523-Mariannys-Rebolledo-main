@@ -76,7 +76,7 @@ ol, ul:not(#menu){
 .container code{
     background-color:rgb(192, 192, 192);
     border: 1px solid #808080;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 2px;
 }
 
