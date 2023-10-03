@@ -64,7 +64,12 @@ REGOLE
 
   /* 
   <script>
-    name = Rebolledo;
+   let name = 'Mariannys';
+    console.log(name);
+    {
+    const name = 'Rebolledo';
+    let name = 'Mariannys';
+    }
     console.log(name)
   </script>
   */
@@ -77,7 +82,7 @@ REGOLE
   <Script>
     let numero1 = 4;
     let x = 12;
-    console.log(numero1-x);
+    console.log(numero1-x)
   </Script>
   */
 
@@ -90,8 +95,8 @@ REGOLE
 
   /*
   <script>
-    let name1 = john;
-    let name2 = John;
+    let name1 = 'john';
+    let name2 = 'John';
     console.log(name1)
     console.log(name2)
   </script>
