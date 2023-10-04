@@ -104,7 +104,8 @@ const starWarsCharacters = [
 /* ESERCIZIO 1
   Crea una variabile chiamata "characters" e assegnale un array vuoto
 */
-  const characters = ['']
+
+  let characters = [];
 
 
 /* ESERCIZIO 2
@@ -113,7 +114,11 @@ const starWarsCharacters = [
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-  for(const i = 0;i <starWarsCharacters.name; i++){
+  for(let i = 0;i <starWarsCharacters.name; i++){
+
+    let personagginame = starWarsCharacters[i];
+
+
   }
 
 
@@ -129,13 +134,13 @@ const starWarsCharacters = [
   Crea un oggetto "eyeColor" che abbia le seguenti proprietà: blue, yellow, brown, red, blue-gray.
   Ad ognuna di queste proprietà assegna come valore un array vuoto.
 */
-const eyeColor = [
-  {blue:''},
-  {yellow:''},
-  {brown:''},
-  {red:''},
-  {blue-gray:''}
-]
+let eyeColor = {
+  blue : [], 
+  yellow : [], 
+  brown, 
+  red, 
+  blue-gray
+}
 
 /* ESERCIZIO 5
   Utilizza uno switch sta tement per inserire uno ad uno gli oggetti dei personaggi di "starWarsCharacters" negli array relativi al colore degli occhi precedentemente creati.
