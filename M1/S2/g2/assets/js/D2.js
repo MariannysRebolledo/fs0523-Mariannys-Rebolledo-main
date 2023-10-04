@@ -2,6 +2,13 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
+let x = 4
+let y = 7
+
+if (x > y){
+  console.log('il numero più piccolo è,' x)
+} else if (x < y)
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 2

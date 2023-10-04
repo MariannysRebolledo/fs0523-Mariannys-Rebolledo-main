@@ -118,16 +118,26 @@ const starWarsCharacters = [
 
     let personagginame = starWarsCharacters[i];
 
+    characters.push(personaggioCorrente.name);
 
   }
+
+  console.log(characters);
 
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
 
-  const femaleCharacters = ['gender'];
-  console.log(femaleCharacters)
+  let femaleCharacters = [''];
+  
+  for (let i = 0; i < starWarsCharacters.length; i++) {
+
+    if (personaggioCorrente.gender == 'female') {
+      femaleCharacters.push(personaggioCorrente)
+    }
+
+  }
 
 
 /* ESERCIZIO 4
@@ -137,9 +147,9 @@ const starWarsCharacters = [
 let eyeColor = {
   blue : [], 
   yellow : [], 
-  brown, 
-  red, 
-  blue-gray
+  brown : [], 
+  red : [], 
+  'blue-gray'; []
 }
 
 /* ESERCIZIO 5
@@ -147,13 +157,51 @@ let eyeColor = {
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
-switch(){
+for (let i = 0; i < starWarsCharacters.length; i++) {
 
+  let personaggioCorrente = starWarsCharacters[i];
+
+  switch (personaggioCorrente.eye_color) {
+    case 'blue':
+      eyeColor.blue.push(personaggioCorrente)
+      break; 
+    case 'yellow':
+      eyeColor.yellow.push(personaggioCorrente)
+      break;
+    case 'brown':
+      eyeColor.brown.push(personaggioCorrente)
+      break;
+    case 'red':
+      eyeColor.red.push(personaggioCorrente)
+      break;
+    case 'blue-gray':
+      eyeColor["blue-gray"].push(personaggioCorrente)
+      break;
+    default:
+      console.error('Colore non esistente')
+  }
 }
+
+console.log(eyeColor);
+
 
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+
+let crewMass = 0;
+
+let x = 0;
+while(x < starWarsCharacters.length) {
+  let personaggioCorrente = starWarsCharacters[x];
+
+  crewMass += personaggioCorrente.mass;
+
+  x++;
+}
+
+console.log(crewMass);
+
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
