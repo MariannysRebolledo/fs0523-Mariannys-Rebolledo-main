@@ -129,9 +129,11 @@ const starWarsCharacters = [
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
 
-  let femaleCharacters = [''];
+  let femaleCharacters = [];
   
   for (let i = 0; i < starWarsCharacters.length; i++) {
+
+    let personaggioCorrente = starWarsCharacters[i];
 
     if (personaggioCorrente.gender == 'female') {
       femaleCharacters.push(personaggioCorrente)
@@ -149,7 +151,7 @@ let eyeColor = {
   yellow : [], 
   brown : [], 
   red : [], 
-  'blue-gray'; []
+  'blue-gray': [],
 }
 
 /* ESERCIZIO 5
@@ -177,6 +179,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     case 'blue-gray':
       eyeColor["blue-gray"].push(personaggioCorrente)
       break;
+      
     default:
       console.error('Colore non esistente')
   }
@@ -200,7 +203,7 @@ while(x < starWarsCharacters.length) {
   x++;
 }
 
-console.log(crewMass);
+console.log(crewMass)
 
 
 /* ESERCIZIO 7
